@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.css" integrity="sha256-SmSEXNAArTgQ8SR6kKpyP/N+jA8f8q8KpG0qQldSKos=" crossorigin="anonymous" />
+    <link rel='stylesheet' href='main.css'/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js" integrity="sha256-lrZTgsdM1iVdRigETFOU8u8/BmLX1ysQ8bzrULbuVFU=" crossorigin="anonymous"></script>
+    <script src="/main.js" charset="utf-8"></script>
+    <title>SpaceX Launch History</title>
+</head>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
+            <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Launches <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.spacex.com/">SpaceX</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">About Me</a>
+            </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<body>
+    <div class='container-fluid'>
+        <div class='row justify-content-center pt-4 mt-5'>
+            <img class='logo' src="spacexLogo.png" alt='image placeholder'/><h1>Launch History</h1>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class='row'>
+            <div class='col-sm-3'>
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">Mission Control</label>
+                    <select class="dropDown form-control" id="exampleFormControlSelect1">
+                        <option id='defaultDropDown' disabled selected hidden>Select A Rocket</option>
+                    </select>
+                </div>
+                <br>
+                <img class='rocketBadge' src="defaultBadge.jpeg" alt='image placeholder'/>
+                <p class='details' value=''></p>
+            </div>
+            <div class='col-sm-6 align-self-center'>
+                <div class="embed-responsive embed-responsive-16by9" autoplay>
+                    <iframe id='rocketVideo' class="embed-responsive-item" src="https://www.youtube.com/embed/u0-pfzKbh2k?start=20&end=35" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class='col-sm-3 align-self-center'>
+                <table class="table table-bordered">
+                    <tbody>
+                        <tr>
+                            <th scope="row">Launch Date</th>
+                            <td id='launchDate'>-</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Mission Success</th>
+                            <td id='missionSuccess'>-</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Landed Booster</th>
+                            <td id='landedBooster'>-</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Payload Contents</th>
+                            <td id='payloadContents'>-</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Payload Nationality</th>
+                            <td id='payloadNationality'>-</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Reused Booster</th>
+                            <td id='reusedBooster'>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>

@@ -1,0 +1,32 @@
+form {
+    width: 70%;
+    left: 0;
+    right: 0;
+    margin: auto; 
+    text-align: center;
+    align-content: center;
+}
+
+label, input, select, button {
+    display: block;
+    width: 100%;
+    font-size: 1.5rem;
+}
+body {
+    background-image: url(rocket.jpeg);
+    background-size: 100%;
+    color: white;
+}
+nav {
+    background-color: #021D3B;
+}
+.aboutTitle {
+    text-align: center;
+}
+.logo {
+    image-resolution: 198px 25px;
+    height: 41px;
+    width: 217px;
+    padding-top: 16px;
+    padding-right: 19px;
+}
